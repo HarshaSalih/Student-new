@@ -41,6 +41,18 @@ public class Main {
                         arrStu.add(s);
                         break;
 
+                    case 2 :
+                        System.out.println("Showing student details");
+                        for (Student stu : arrStu) {
+                            System.out.println("Printing details of student " );
+                            System.out.println(stu.name);
+                            System.out.println(stu.admnNo);
+                            System.out.println(stu.rollNo);
+                            System.out.println(stu.college);
+
+                        }
+                        break;
+
 
                 }
             }
