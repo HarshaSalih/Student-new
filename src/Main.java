@@ -53,7 +53,25 @@ public class Main {
                         }
                         break;
 
+                    case 3 :
+                        System.out.println("Enter the admission number");
+                        Scanner obj1 = new Scanner(System.in);
+                        int admnNo1 = obj1.nextInt();
+                        for (Student s1 : arrStu) {
+                            if (admnNo1 == s1.admnNo) {
+                                System.out.println("Details of student with admission number " + admnNo1 + "is ");
+                                System.out.println(s1.name);
+                                System.out.println(s1.admnNo);
+                                System.out.println(s1.rollNo);
+                                System.out.println(s1.college);
 
+                                break;
+                            }
+                            else {
+                                System.out.println("No such student found");
+
+                            }
+                        }
                 }
             }
         }
