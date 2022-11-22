@@ -25,7 +25,24 @@ public class Main {
                 System.out.println("You are exiting from the program");
                 System.exit(0);
             } else {
+                switch (option) {
+                    case 1:
+                        System.out.println("Enter student details");
+                        Scanner obj = new Scanner(System.in);
+                        System.out.println("Enter the name");
+                        String name = obj.next();
+                        System.out.println("Enter admission number");
+                        int admnNo = obj.nextInt();
+                        System.out.println("Enter roll number");
+                        int rollNo = obj.nextInt();
+                        System.out.println("Enter college");
+                        String college = obj.next();
+                        Student s = new Student(name, admnNo, rollNo, college);
+                        arrStu.add(s);
+                        break;
 
+
+                }
             }
         }
     }
