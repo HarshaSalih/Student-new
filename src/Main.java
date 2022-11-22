@@ -79,6 +79,7 @@ public class Main {
                         for (Student s1 : arrStu){
                             if (admnNo2 == s1.admnNo){
                                 arrStu.remove(s1);
+                                break;
                             }
                         }
                         break;
