@@ -72,6 +72,16 @@ public class Main {
 
                             }
                         }
+                    case 4 :
+                        System.out.println("Enter the admission number");
+                        Scanner obj2 = new Scanner(System.in);
+                        int admnNo2 = obj2.nextInt();
+                        for (Student s1 : arrStu){
+                            if (admnNo2 == s1.admnNo){
+                                arrStu.remove(s1);
+                            }
+                        }
+                        break;
                 }
             }
         }
